@@ -14,7 +14,7 @@
 			<button class="btn reset">reset</button>
 			<button class="btn increase">increase</button>
 		</div>
-		<div class="user"></div>
+		<div class="user">username...</div>
 	</div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script>
@@ -26,9 +26,7 @@ simpleSheet: true } )
 
 function showInfo(data, tabletop) {
     for (var i = 0; i < data.length; i++){
-    	$('.user').append(
-		'<p>' +data[i].username+ '</p>'
-	);
+    	document.querySelector('.user').innerText = data[i].username;
     }
     console.log(data);
   }
