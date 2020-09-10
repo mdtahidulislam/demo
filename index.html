@@ -25,7 +25,11 @@ simpleSheet: true } )
 }
 
 function showInfo(data, tabletop) {
-    alert('Successfully processed!')
+    for (var i = 0; i < data.length; i++){
+    	$('.user').append(
+		'<p>' +data[i].username+ '</p>'
+	);
+    }
     console.log(data);
   }
 	
