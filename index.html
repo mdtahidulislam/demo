@@ -19,10 +19,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script>
     function init() {
-Tabletop.init( { key: ‘https://docs.google.com/spreadsheets/d/1_RfcIObpWQypYpC-ItrVaLOOpfzGcQyUE6DQW2SFBuw/pubhtml',
-callback: function(data, tabletop) {
-console.log(data)
-},
+Tabletop.init( { key: ‘1_RfcIObpWQypYpC-ItrVaLOOpfzGcQyUE6DQW2SFBuw',
+callback: showInfo,
 simpleSheet: true } )
 }
 
